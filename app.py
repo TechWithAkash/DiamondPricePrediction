@@ -3,7 +3,7 @@ from src.pipelines.prediction_pipeline import CustomData,PredictPipeline
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def home():
     return render_template('index.html')
 
@@ -34,5 +34,5 @@ def predict_datapoint():
         return render_template('results.html', final_result=results)
     
 
-    if __name__ == '__main__':
-        app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True,port=5002)

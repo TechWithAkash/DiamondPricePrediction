@@ -5,7 +5,7 @@ from src.utils import load_object
 from src.logger import logging
 import pandas as pd
 
-class predictionPipeline:
+class PredictPipeline:
     def __init__(self):
         pass
 

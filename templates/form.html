@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Diamond Price - DiamondPredict</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">💎 DiamondPredict</div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('home') }}#features">Features</a></li>
+                <li><a href="{{ url_for('home') }}#about">About</a></li>
+                <li><a href="{{ url_for('predict_datapoint') }}" class="cta-button">Predict Now</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h1>Diamond Price Prediction</h1>
+            <p>Enter the characteristics of your diamond to get an accurate price prediction.</p>
+            <form action="{{ url_for('predict_datapoint') }}" method="POST">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="carat">Carat Weight:</label>
+                        <input type="number" id="carat" name="carat" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="depth">Depth Percentage:</label>
+                        <input type="number" id="depth" name="depth" step="0.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="table">Table Percentage:</label>
+                        <input type="number" id="table" name="table" step="0.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="x">Length (mm):</label>
+                        <input type="number" id="x" name="x" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="y">Width (mm):</label>
+                        <input type="number" id="y" name="y" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="z">Depth (mm):</label>
+                        <input type="number" id="z" name="z" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cut">Cut Quality:</label>
+                        <select id="cut" name="cut" required>
+                            <option value="">Select cut</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Good">Good</option>
+                            <option value="Very Good">Very Good</option>
+                            <option value="Premium">Premium</option>
+                            <option value="Ideal">Ideal</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="color">Color Grade:</label>
+                        <select id="color" name="color" required>
+                            <option value="">Select color</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="G">G</option>
+                            <option value="H">H</option>
+                            <option value="I">I</option>
+                            <option value="J">J</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="clarity">Clarity Grade:</label>
+                        <select id="clarity" name="clarity" required>
+                            <option value="">Select clarity</option>
+                            <option value="I1">I1</option>
+                            <option value="SI2">SI2</option>
+                            <option value="SI1">SI1</option>
+                            <option value="VS2">VS2</option>
+                            <option value="VS1">VS1</option>
+                            <option value="VVS2">VVS2</option>
+                            <option value="VVS1">VVS1</option>
+                            <option value="IF">IF</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">
+                    <span class="button-text">Predict Price</span>
+                    <i class="fas fa-spinner fa-spin"></i>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>DiamondPredict</h3>
+                <p>Advanced diamond price prediction powered by AI.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('home') }}#features">Features</a></li>
+                    <li><a href="{{ url_for('home') }}#about">About</a></li>
+                    <li><a href="{{ url_for('predict_datapoint') }}">Predict</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DiamondPredict. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
