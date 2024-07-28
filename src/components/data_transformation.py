@@ -18,7 +18,7 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationconfig:
-    preprocessor_ob_file_path = os.path.join("artifacts", "preprocessor.pkl")
+    preprocessor_obj_file_path = os.path.join("artifacts", "preprocessor.pkl")
 
 
 # Data IngestionConfig Class
@@ -26,7 +26,7 @@ class DataTransformationconfig:
 
 class DataTransformation:
     def __init__(self):
-        self.data_transformation_config = DataTransformation()
+        self.data_transformation_config = DataTransformationconfig()
 
     def get_data_transformation_object(self):
         try:
