@@ -1,7 +1,5 @@
 # 💎 DiamondPredict: Advanced Diamond Price Prediction
 
-![DiamondPredict Logo](https://your-image-hosting-url.com/diamondpredict-logo.png)
-
 DiamondPredict is a state-of-the-art web application that leverages machine learning to provide accurate price predictions for diamonds based on their characteristics. Whether you're a jeweler, a diamond enthusiast, or simply curious about diamond pricing, DiamondPredict offers instant, reliable estimates at your fingertips.
 
 ## 🌟 Features
@@ -23,18 +21,22 @@ Check out DiamondPredict in action:
 To run DiamondPredict locally, follow these steps:
 
 1. Clone the repository:
+   
 git clone https://github.com/TechWithAkash/DiamondPricePrediction.git
 
-2. Navigate to the project directory:
+3. Navigate to the project directory:
+   
 cd DiamondPricePrediction
 
-3. Install the required dependencies:
+5. Install the required dependencies:
+   
 pip install -r requirements.txt
 
-4. Run the Flask application:
+7. Run the Flask application:
+   
 python app.py
 
-5. Open your web browser and visit `http://localhost:5001` to use DiamondPredict.
+9. Open your web browser and visit `http://localhost:5001` to use DiamondPredict.
 
 ## 💻 Technologies Used
 
