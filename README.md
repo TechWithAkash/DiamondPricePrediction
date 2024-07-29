@@ -21,22 +21,29 @@ https://github.com/user-attachments/assets/caba1b40-11c8-46b5-99d3-88e4d6de15d9
 To run DiamondPredict locally, follow these steps:
 
 1. Clone the repository:
-   
-git clone https://github.com/TechWithAkash/DiamondPricePrediction.git
 
-3. Navigate to the project directory:
-   
+```
+git clone https://github.com/TechWithAkash/DiamondPricePrediction.git 
+
+```
+2. Navigate to the project directory:
+
+```
 cd DiamondPricePrediction
+```
 
-5. Install the required dependencies:
-   
+3. Install the required dependencies:
+
+```
 pip install -r requirements.txt
+```
 
-7. Run the Flask application:
-   
+4. Run the Flask application:
+```
 python app.py
+```
 
-9. Open your web browser and visit `http://localhost:5001` to use DiamondPredict.
+5. Open your web browser and visit `http://127.0.0.1:5002/` to use DiamondPredict.
 
 ## 💻 Technologies Used
 
