@@ -14,7 +14,7 @@ DiamondPredict is a state-of-the-art web application that leverages machine lear
 
 Check out DiamondPredict in action:
 
-[![DiamondPredict Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+https://github.com/user-attachments/assets/caba1b40-11c8-46b5-99d3-88e4d6de15d9
 
 ## 🚀 Getting Started
 
