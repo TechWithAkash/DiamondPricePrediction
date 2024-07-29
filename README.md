@@ -1,6 +1,6 @@
 # 💎 DiamondPredict: Advanced Diamond Price Prediction
 
-![DiamondPredict Logo](https://your-image-hosting-url.com/diamondpredict-logo.png)
+<!-- ![DiamondPredict Logo](https://your-image-hosting-url.com/diamondpredict-logo.png) -->
 
 DiamondPredict is a state-of-the-art web application that leverages machine learning to provide accurate price predictions for diamonds based on their characteristics. Whether you're a jeweler, a diamond enthusiast, or simply curious about diamond pricing, DiamondPredict offers instant, reliable estimates at your fingertips.
 
