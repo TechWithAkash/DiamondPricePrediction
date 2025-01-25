@@ -1,9 +1,9 @@
 :root {
     --primary-color: #4a90e2;
     --secondary-color: #f39c12;
-    --background-color: #f8f9fa;
+    --background-color: #ffffff;
     --text-color: #333;
-    --light-gray: #e9ecef;
+    --light-gray: #ffffff;
 }
 
 * {
@@ -80,7 +80,6 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 4rem 5%;
-    background-color: whitesmoke;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -154,7 +153,7 @@ main {
 }
 
 .feature-card {
-    background-color: var(--light-gray);
+    background-color: rgb(250, 246, 246);
     padding: 2rem;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
