@@ -21,7 +21,6 @@ body {
 
 header {
     background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -81,6 +80,7 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 4rem 5%;
+    background-color: whitesmoke;
     max-width: 1200px;
     margin: 0 auto;
 }
